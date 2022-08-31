@@ -70,7 +70,7 @@ def extract_frame(video_path, process_annotations, file_name, train_f):
                     dataset_line = jpg_file_name + " " + gender_w + age_w + top_type_w + top_color_w + bottom_type_w + bottom_color_w + accessories_w + pet_w + "\n"
                     cv2.imwrite('val100_images/' + jpg_file_name, crop_img)
                     train_f.write(dataset_line)
-                    checked_idx += 10
+                    checked_idx += 1
                 frame_no += 1
             else:
                 break
